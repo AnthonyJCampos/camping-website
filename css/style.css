@@ -1,0 +1,139 @@
+/* ++++++++++++++++++++++++++++++ */
+/* HEADER SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+
+  padding: 0px 4.8rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-tertiary);
+}
+
+.icon-logo {
+  width: 3.6rem;
+  height: 3.6rem;
+  color: var(--color--logo-icon-primary);
+}
+
+.main-nav {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+  border-bottom: 0.4rem solid var(--color--logo-icon-primary);
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-tertiary);
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--color-font-secondary);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: var(--color-tertiary);
+  color: var(--color-font-primary);
+  padding: 1.2rem 1.8rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--color-hover-primary);
+  color: var(--color-font-tertiary);
+}
+
+/* ++++++++++++++++++++++++++++++ */
+/* HERO SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.section-hero {
+  padding: 4.8rem 0 6.4rem 0;
+  background-color: var(--color-secondary);
+  color: var(--color-font-primary);
+}
+
+.hero {
+  max-width: 130rem;
+  /* center hero section*/
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: var(--shadow--primary);
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description:last-child {
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 1.6rem 8rem;
+  transition: all 0.4s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  text-transform: uppercase;
+  background-color: var(--color-quaternary);
+  color: var(--color-font-primary);
+  box-shadow: var(--shadow--primary);
+  transition: all 0.3s;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--color-hover-primary);
+  color: var(--color-font-tertiary);
+}
