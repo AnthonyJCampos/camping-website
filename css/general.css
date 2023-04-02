@@ -41,6 +41,7 @@ REDS:
 :root {
   --primary-color: #4a6382;
   --color-secondary: #899ab8;
+  --color-secondary-tint: #c4cddc;
   --color-tertiary: #dadddf;
   --color-quaternary: #e63946;
   --color-font-primary: #292e37;
@@ -120,6 +121,27 @@ body {
 .margin--no {
   margin: 0 !important;
 }
+
+.justify-start {
+  justify-content: flex-start !important;
+}
+
+.flex--col {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+}
+
+.flex--row {
+  display: flex;
+  gap: 6.4rem;
+}
+
+.flex-center {
+  align-items: center;
+  justify-items: center;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -128,6 +150,10 @@ body {
 
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
+}
+
+.grid--1-col {
+  grid-template-columns: 1fr;
 }
 
 .grid--2-cols {
@@ -145,11 +171,17 @@ body {
 
 .link:link,
 .link:visited {
+  width: fit-content;
   font-size: 1.6rem;
+  font-weight: 500;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--color-font-secondary);
+  border-bottom: 2px solid var(--color-font-secondary);
+
+  transition: all 0.3s;
 }
 
 .link:hover,
 .link:active {
+  border-bottom: 2px solid transparent;
 }
