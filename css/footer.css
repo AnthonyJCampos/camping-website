@@ -1,0 +1,41 @@
+/* ++++++++++++++++++++++++++++++ */
+/* FOOTER SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.footer {
+  height: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 4.8rem;
+  background-color: var(--color-primary);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.sub-nav-title {
+  font-size: 1.8rem;
+  color: var(--color-font-tertiary);
+  margin-bottom: 0.8rem;
+}
+.sub-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  list-style: none;
+  color: var(--color-font-tertiary);
+}
+.sub-nav-link:link,
+.sub-nav-link:visited {
+  font-size: 1.2rem;
+  color: var(--color-font-tertiary);
+  text-decoration: none;
+}
+
+.sub-nav-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}

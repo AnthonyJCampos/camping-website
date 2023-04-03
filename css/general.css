@@ -199,6 +199,14 @@ body {
   justify-items: center;
 }
 
+.text-underline-red {
+  text-decoration: underline solid var(--color-quaternary);
+}
+
+.underline-red {
+  border-bottom: 1rem solid var(--color-quaternary);
+}
+
 .img-border {
   padding: 1rem;
   border: 0.5rem dashed var(--color-quaternary);

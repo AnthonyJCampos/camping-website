@@ -1,0 +1,71 @@
+/* ++++++++++++++++++++++++++++++ */
+/* HEADER SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+
+  padding: 0px 4.8rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-tertiary);
+}
+
+.icon-logo {
+  width: 3.6rem;
+  height: 3.6rem;
+  color: var(--color--logo-icon-primary);
+}
+
+.main-nav {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  list-style: none;
+  border-bottom: 0.4rem solid var(--color--logo-icon-primary);
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-tertiary);
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--color-font-secondary);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: var(--color-tertiary);
+  color: var(--color-font-primary);
+  padding: 1.2rem 1.8rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--color-hover-primary);
+  color: var(--color-font-tertiary);
+}
