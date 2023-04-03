@@ -39,7 +39,7 @@ REDS:
 */
 
 :root {
-  --primary-color: #4a6382;
+  --color-primary: #4a6382;
   --color-secondary: #899ab8;
   --color-secondary-tint: #c4cddc;
   --color-tertiary: #dadddf;
@@ -47,6 +47,7 @@ REDS:
   --color-font-primary: #292e37;
   --color-font-secondary: #070a0d;
   --color-font-tertiary: #dadddf;
+  --color-font-quaternary: #dbe0e6;
   --color-hover-primary: #070a0d;
   --color--logo-icon-primary: #e63946;
   --shadow--primary: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -104,10 +105,37 @@ body {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--color-primary);
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
+}
+
+.btn:link,
+.btn:visited {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 1.6rem 8rem;
+  transition: all 0.4s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  text-transform: uppercase;
+  background-color: var(--color-quaternary);
+  color: var(--color-font-primary);
+  box-shadow: var(--shadow--primary);
+  transition: all 0.3s;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--color-hover-primary);
+  color: var(--color-font-tertiary);
 }
 
 .container {
@@ -116,6 +144,10 @@ body {
   margin: 0 auto;
   /* Left spacing */
   padding: 0 3.2rem;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .margin--no {
@@ -163,10 +195,46 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-center {
+  justify-items: center;
+}
+
 .img-border {
   padding: 1rem;
   border: 0.5rem dashed var(--color-quaternary);
   border-radius: 34px;
+}
+
+.border-blue {
+  padding: 1rem;
+  border: 0.5rem dashed var(--color-secondary);
+  border-radius: 34px;
+}
+
+.border-light {
+  padding: 1rem;
+  border: 0.5rem dashed var(--color-secondary-tint);
+  border-radius: 34px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 2rem;
+}
+
+.list-item ion-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color--logo-icon-primary);
 }
 
 .link:link,
@@ -184,4 +252,76 @@ body {
 .link:hover,
 .link:active {
   border-bottom: 2px solid transparent;
+}
+
+/* CAROUSEL */
+
+.carousel {
+  width: 90rem;
+  margin: 10rem auto;
+  background-color: var(--color-primary);
+  padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+}
+
+.btn--carousel {
+  background-color: var(--color-tertiary);
+  border: none;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  /* a nice way to center a svg in a button or something*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.btn--carousel--right {
+  right: 0;
+  /* align center trick*/
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.carousel-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--color-font-secondary);
+}
+.btn--carousel--left {
+  /* In relation to Parent Element*/
+  left: 0;
+  /* align center trick*/
+  top: 50%;
+  /* In relation to Element itself*/
+  transform: translate(-50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 32px);
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid var(--color-quaternary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: var(--color-quaternary);
 }
