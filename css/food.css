@@ -129,3 +129,34 @@
 .section-snacks {
   padding: 4.8rem 0 12.8rem 0;
 }
+
+.snack-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 2.4rem;
+}
+
+.list-box {
+  display: flex;
+}
+
+.snack-list-heading {
+  font-size: 2rem;
+}
+
+.snack-info {
+  font-size: 2rem;
+}
+
+.snack-img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow--primary);
+}
+
+.snack-img-grid img {
+  width: 120%;
+}
