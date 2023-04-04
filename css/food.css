@@ -54,6 +54,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
+  margin-bottom: 4.8rem;
 }
 
 .meal-day-name {
@@ -73,6 +74,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-quaternary);
+  margin-bottom: 1rem;
 }
 
 .meal-day {
