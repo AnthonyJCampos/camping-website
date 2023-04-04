@@ -52,6 +52,8 @@ REDS:
   --color--logo-icon-primary: #e63946;
   --shadow--primary: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --shadow--secondary: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(230, 57, 70, 0.32) 0px 2px 16px 0px;
 }
 
 /* Global Reset*/
@@ -231,6 +233,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+.list--row {
+  flex-direction: row !important;
+  flex-wrap: wrap;
 }
 
 .list-item {
