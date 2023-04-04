@@ -136,8 +136,16 @@
   gap: 2.4rem;
 }
 
-.snack-box:hover {
+.snack-box {
   border-radius: 24px;
+  transition: box-shadow 0.6s;
+}
+
+.snack-box .snack-img-box {
+  transition: box-shadow 0.6s;
+}
+
+.snack-box:hover {
   box-shadow: var(--shadow--secondary);
 }
 
