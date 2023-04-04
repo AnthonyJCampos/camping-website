@@ -79,6 +79,30 @@ body {
 /* GENERAL RESUABLE COMPONENTS */
 /* +++++++++++++++++++++++++++++++++ */
 
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-tertiary);
+  transition: all 0.3s;
+}
+
+.logo:hover,
+.logo:active {
+  color: var(--color--logo-icon-primary);
+}
+
+.icon-logo {
+  width: 3.6rem;
+  height: 3.6rem;
+  color: var(--color--logo-icon-primary);
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
