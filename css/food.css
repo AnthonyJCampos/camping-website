@@ -82,6 +82,12 @@
   border-radius: 24px;
   background-color: #edeff3;
   box-shadow: var(--shadow--primary);
+
+  transition: all 0.4s;
+}
+
+.meal-day:hover {
+  transform: translateY(-0.5rem);
 }
 
 .meal-img-box {
@@ -114,4 +120,12 @@
 .meal-booster {
   font-size: 1.8rem;
   margin-bottom: 0.8rem;
+}
+
+/* ++++++++++++++++++++++++++++++ */
+/* SNACK SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.section-snacks {
+  padding: 4.8rem 0 12.8rem 0;
 }
