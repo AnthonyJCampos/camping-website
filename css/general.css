@@ -39,21 +39,43 @@ REDS:
 */
 
 :root {
+  /* MAIN COLORS*/
   --color-primary: #4a6382;
   --color-secondary: #899ab8;
-  --color-secondary-tint: #c4cddc;
+
   --color-tertiary: #dadddf;
   --color-quaternary: #e63946;
-  --color-font-primary: #292e37;
-  --color-font-secondary: #070a0d;
+  /* TINTS AND SHADES*/
+  --color-secondary-tint: #c4cddc;
+
+  /* FONT COLORS*/
+  --color-font-primary: #070a0d;
+  --color-font-secondary: #292e37;
   --color-font-tertiary: #dadddf;
   --color-font-quaternary: #dbe0e6;
-  --color-hover-primary: #070a0d;
+
+  /* FONT HEADINGS */
+  --color-font--heading-primary: #292e37;
+  --color-font--heading-secondary: #373e4a;
+
+  /* ICON COLORS */
   --color--logo-icon-primary: #e63946;
+
+  /* EFFECT COLORS */
+  --color-hover-primary: #070a0d;
+
+  /* SHADOW STYLES*/
   --shadow--primary: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --shadow--secondary: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(230, 57, 70, 0.32) 0px 2px 16px 0px;
+
+  /* GRADIENT STYLES */
+  --linear-gradient-primary: linear-gradient(
+    90deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
 }
 
 /* Global Reset*/
@@ -106,7 +128,7 @@ body {
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-  color: var(--color-font-secondary);
+  color: var(--color-font--heading-primary);
   letter-spacing: -0.5px;
 }
 
@@ -136,6 +158,10 @@ body {
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
+}
+
+.text--dark-blue {
+  color: var(--color-font-primary);
 }
 
 .btn:link,
@@ -287,8 +313,8 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   text-decoration: none;
-  color: var(--color-font-secondary);
-  border-bottom: 2px solid var(--color-font-secondary);
+  color: var(--color-font-primary);
+  border-bottom: 2px solid var(--color-font-primary);
 
   transition: all 0.3s;
 }
@@ -336,7 +362,7 @@ body {
 .carousel-icon {
   height: 2.4rem;
   width: 2.4rem;
-  color: var(--color-font-secondary);
+  color: var(--color-font-primary);
 }
 .btn--carousel--left {
   /* In relation to Parent Element*/

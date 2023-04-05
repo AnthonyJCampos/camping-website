@@ -6,6 +6,48 @@
 }
 
 /* ++++++++++++++++++++++++++++++ */
+/* Water SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.section-water {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.water-box {
+  background: var(--linear-gradient-primary);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.water-img-box {
+  display: flex;
+  align-items: center;
+}
+
+.water-img {
+  width: 120%;
+}
+
+.water-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 0 2.4rem 3rem;
+}
+
+.water-header {
+  color: var(--color-font--heading-secondary);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-right: auto;
+  margin-bottom: 2.4rem;
+}
+
+.water-info {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+/* ++++++++++++++++++++++++++++++ */
 /* ALCOHLIC SECTION */
 /* ++++++++++++++++++++++++++++++ */
 .section-alcohlic {
