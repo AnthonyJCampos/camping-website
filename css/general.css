@@ -90,6 +90,18 @@ REDS:
     rgba(196, 205, 220, 1) 0%,
     rgba(137, 154, 184, 1) 100%
   );
+
+  --linear-gradient-secondary--top: linear-gradient(
+    0deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(44, 59, 78, 1) 100%
+  );
+
+  --linear-gradient-tertiary--top: linear-gradient(
+    0deg,
+    rgba(220, 189, 191, 1) 0%,
+    rgba(138, 34, 42, 1) 100%
+  );
 }
 
 /* Global Reset*/
