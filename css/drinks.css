@@ -134,7 +134,7 @@
 /* ALCOHLIC SECTION */
 /* ++++++++++++++++++++++++++++++ */
 .section-alcohlic {
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 4.8rem 0 12.8rem 0;
 }
 
 .alcohlic-text-box {
@@ -177,11 +177,63 @@
 }
 
 .alcohlic-img {
-  width: 50%;
+  width: 100%;
   border-radius: 24px;
   box-shadow: var(--shadow--primary);
 }
 
-.alcohlic-img--intro {
+.alcohlic-warning {
+  margin-top: 6.4rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-quaternary);
+}
+
+.drink-choices {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+  color: var(--color-secondary);
+}
+
+.drink-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.drink-box-inner {
+  width: 60%;
+
+  box-shadow: var(--shadow--primary);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.drink-img {
+  display: block;
   width: 100%;
+}
+
+.drink-grid {
+  display: grid;
+  column-gap: 3.2rem;
+}
+
+.drink-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 3.2rem;
+}
+.drink-name {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.drink-info {
+  font-size: 1.6rem;
 }
