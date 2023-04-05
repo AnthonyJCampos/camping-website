@@ -10,21 +10,42 @@
 /* ++++++++++++++++++++++++++++++ */
 
 .section-water {
-  padding: 4.8rem 0 9.6rem 0;
+  border-top: 0.5rem dashed rgba(230, 57, 70, 0.4);
+  padding: 9.6rem 0 4.8rem 0;
+  background-color: #f3f5f8;
 }
 
 .water-box {
-  background: var(--linear-gradient-primary);
+  min-height: 37.5rem;
+  background: var(--linear-gradient-primary--right);
   border-radius: 24px;
   overflow: hidden;
 }
 .water-img-box {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .water-img {
-  width: 120%;
+  width: 110%;
+}
+
+.water-heading {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+  margin-right: auto;
+}
+
+.water-icon {
+  color: var(--color--logo-icon-primary);
+  width: 3rem;
+  height: 3rem;
+  padding: 1.2rem;
+  background-color: var(--color--logo-icon-secondary);
+  border-radius: 50%;
 }
 
 .water-text-box {
@@ -39,14 +60,76 @@
   color: var(--color-font--heading-secondary);
   font-size: 3rem;
   font-weight: 600;
-  margin-right: auto;
-  margin-bottom: 2.4rem;
 }
 
 .water-info {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
+
+/* ++++++++++++++++++++++++++++++ */
+/* COFFEE SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.section-coffee {
+  border-bottom: 0.5rem dashed rgba(230, 57, 70, 0.4);
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: #f3f5f8;
+}
+
+.coffee-box {
+  min-height: 38.5rem;
+  background: var(--linear-gradient-primary--left);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.coffee-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.coffee-img {
+  width: 110%;
+}
+
+.coffee-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 3rem 2.4rem 0;
+}
+
+.coffee-heading {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+  margin-right: auto;
+}
+
+.coffee-icon {
+  color: var(--color--logo-icon-primary);
+  width: 3rem;
+  height: 3rem;
+  padding: 1.2rem;
+  background-color: var(--color--logo-icon-secondary);
+  border-radius: 50%;
+}
+
+.coffee-header {
+  color: var(--color-font--heading-secondary);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.coffee-info {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
 /* ++++++++++++++++++++++++++++++ */
 /* ALCOHLIC SECTION */
 /* ++++++++++++++++++++++++++++++ */

@@ -60,6 +60,7 @@ REDS:
 
   /* ICON COLORS */
   --color--logo-icon-primary: #e63946;
+  --color--logo-icon-secondary: #f3f5f8;
 
   /* EFFECT COLORS */
   --color-hover-primary: #070a0d;
@@ -69,10 +70,17 @@ REDS:
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --shadow--secondary: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(230, 57, 70, 0.32) 0px 2px 16px 0px;
+  --shadow-tertiary: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 
   /* GRADIENT STYLES */
-  --linear-gradient-primary: linear-gradient(
+  --linear-gradient-primary--right: linear-gradient(
     90deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
+
+  --linear-gradient-primary--left: linear-gradient(
+    270deg,
     rgba(196, 205, 220, 1) 0%,
     rgba(137, 154, 184, 1) 100%
   );
@@ -162,6 +170,10 @@ body {
 
 .text--dark-blue {
   color: var(--color-font-primary);
+}
+
+.shadow--light {
+  box-shadow: var(--shadow-tertiary) !important;
 }
 
 .btn:link,
