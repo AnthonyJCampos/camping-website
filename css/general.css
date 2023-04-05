@@ -222,6 +222,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid-center {
   justify-items: center;
 }
