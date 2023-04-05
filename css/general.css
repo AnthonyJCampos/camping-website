@@ -84,6 +84,12 @@ REDS:
     rgba(196, 205, 220, 1) 0%,
     rgba(137, 154, 184, 1) 100%
   );
+
+  --linear-gradient-primary--top: linear-gradient(
+    0deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
 }
 
 /* Global Reset*/
