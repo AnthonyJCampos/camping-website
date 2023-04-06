@@ -53,6 +53,14 @@
 }
 
 /* ++++++++++++++++++++++++++++++ */
+/* BANNER SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.banner-img {
+  width: 100%;
+  box-shadow: var(--shadow--primary);
+}
+/* ++++++++++++++++++++++++++++++ */
 /* HOW IT WORKS SECTION */
 /* ++++++++++++++++++++++++++++++ */
 
@@ -93,4 +101,36 @@
 .step-img {
   border-radius: 24px;
   width: 100%;
+}
+
+/* ++++++++++++++++++++++++++++++ */
+/* LOCATION SECTION */
+/* ++++++++++++++++++++++++++++++ */
+.section-location {
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: var(--color-secondary-tint);
+}
+
+.location-info {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.location-img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: var(--shadow--primary);
+}
+
+/* ++++++++++++++++++++++++++++++ */
+/* Memory SECTION */
+/* ++++++++++++++++++++++++++++++ */
+.section-memory {
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: var(--color-secondary-tint);
+  background: var(--linear-gradient-primary--bottom);
+}
+
+.grid-memory {
+  display: grid;
 }
