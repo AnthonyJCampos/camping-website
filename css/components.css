@@ -14,13 +14,13 @@
 
 .main-nav {
   display: flex;
-  gap: 2.4rem;
+  gap: 3.6rem;
 }
 
 .main-nav-list {
   display: flex;
   align-items: center;
-  gap: 2.4rem;
+  gap: 3.6rem;
   list-style: none;
   border-bottom: 0.4rem solid var(--color--logo-icon-primary);
 }
