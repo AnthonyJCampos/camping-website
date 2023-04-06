@@ -1,0 +1,96 @@
+/* ++++++++++++++++++++++++++++++ */
+/* ABOUT SECTION */
+/* ++++++++++++++++++++++++++++++ */
+.section-about {
+  padding: 4.8rem 0 9.6rem 0;
+  background: var(--linear-gradient-primary--top);
+}
+
+.about {
+  max-width: 130rem;
+  /* center hero section*/
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.about-imgs--wrap {
+  flex-wrap: wrap;
+}
+
+.about-imgs-flex {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 24px;
+  box-shadow: var(--shadow--primary);
+  overflow: hidden;
+}
+
+.about-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: var(--shadow--primary);
+}
+
+.about-boost {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+  color: var(--color-font--heading-primary);
+}
+
+.about-description {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+/* ++++++++++++++++++++++++++++++ */
+/* HOW IT WORKS SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.grid--steps {
+  grid-template-columns: 3fr 2fr;
+}
+
+.step-number {
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: var(--color-quaternary);
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-note {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.step-note strong {
+  color: var(--color-quaternary);
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+}
+
+.step-img {
+  border-radius: 24px;
+  width: 100%;
+}
