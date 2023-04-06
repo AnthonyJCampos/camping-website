@@ -246,6 +246,10 @@ body {
   margin: 0 !important;
 }
 
+.padding--no {
+  padding: 0 !important;
+}
+
 .justify-start {
   justify-content: flex-start !important;
 }
