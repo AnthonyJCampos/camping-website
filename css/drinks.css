@@ -192,7 +192,7 @@
 .drink-choices {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 4.8rem;
+  margin-bottom: 9.6rem;
   color: var(--color-secondary);
   border-bottom: 2px solid var(--color-secondary);
 }
@@ -205,7 +205,7 @@
 }
 
 .drink-box-inner {
-  width: 60%;
+  width: 80%;
 
   box-shadow: var(--shadow--primary);
   border-radius: 24px;
@@ -236,5 +236,5 @@
 }
 
 .drink-info {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
