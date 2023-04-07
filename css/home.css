@@ -218,3 +218,34 @@
   font-size: 1.8rem;
   color: var(--color-primary);
 }
+
+/* ++++++++++++++++++++++++++++++ */
+/* FEATURES  SECTION */
+/* ++++++++++++++++++++++++++++++ */
+
+.feature-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.feature-icon {
+  color: var(--color--logo-icon-primary);
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: var(--color--logo-icon-secondary);
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: var(--color-font-secondary);
+  font-weight: 700;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: center;
+}
