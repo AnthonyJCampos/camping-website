@@ -386,7 +386,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 86px;
+  gap: 8.6rem;
 }
 
 .btn--carousel {
@@ -435,8 +435,8 @@ body {
   transform: translate(-50%, 32px);
 }
 .dot {
-  height: 12px;
-  width: 12px;
+  height: 1.2rem;
+  width: 1.2rem;
   background-color: #fff;
   border: 2px solid var(--color-quaternary);
   border-radius: 50%;

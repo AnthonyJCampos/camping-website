@@ -23,6 +23,8 @@
 .team-member-box {
   /* min-width: 300px; */
   min-width: 30rem;
+  /* min-height: 55rem; */
+  min-height: 60rem;
   max-width: 336px;
   border-radius: 24px;
   overflow: hidden;

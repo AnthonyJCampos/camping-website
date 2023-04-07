@@ -78,6 +78,14 @@
     font-size: 50%;
   }
 
+  .header {
+    padding: 0px 3.2rem;
+  }
+
+  .container {
+    padding: 0 4.8rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -98,6 +106,28 @@
   .step-number {
     font-size: 7.4rem;
   }
+
+  .section-princing .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-box .pricing-option:last-child {
+    grid-column: 1/-1;
+  }
+
+  .feature-box {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .feature-box .feature:last-child {
+    grid-column: 1/-1;
+    width: 50%;
+  }
 }
 
 /* +++++++++++++++++++++++++++++++++ */
@@ -114,27 +144,8 @@
     font-size: 6.2rem;
   }
 
-  .boxes-name {
-    text-align: center;
-  }
-
-  .team-box {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* +++++++++++++++++++++++++++++++++ */
-/* BELOW 800px  */
-/* +++++++++++++++++++++++++++++++++ */
-
-@media (max-width: 50em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-    font-size: 43.75%;
-  }
-
-  .step-number {
-    font-size: 6.2rem;
+  .step-img-box {
+    align-items: flex-end;
   }
 
   .boxes-name {
@@ -143,6 +154,10 @@
 
   .team-box {
     grid-template-columns: 1fr;
+  }
+
+  .carousel {
+    width: 64rem;
   }
 }
 
