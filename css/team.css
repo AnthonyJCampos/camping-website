@@ -9,6 +9,7 @@
 
 .team-about-text {
   font-size: 2.4rem;
+  line-height: 1.3;
 }
 
 /* ++++++++++++++++++++++++++++++ */
@@ -20,6 +21,9 @@
 }
 
 .team-member-box {
+  /* min-width: 300px; */
+  min-width: 30rem;
+  max-width: 336px;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: var(--shadow--primary);
