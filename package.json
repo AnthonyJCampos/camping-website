@@ -1,0 +1,23 @@
+{
+  "name": "campsus",
+  "version": "1.0.0",
+  "description": "The is the Website site for Camp Sus",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyJCampos/camping-website.git"
+  },
+  "author": "Anthony Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthonyJCampos/camping-website/issues"
+  },
+  "homepage": "https://github.com/AnthonyJCampos/camping-website#readme",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  }
+}
