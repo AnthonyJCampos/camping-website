@@ -133,7 +133,11 @@ img {
   transition: filter 0.5s;
 }
 
-section {
+/* +++++++++++++++++++++++++++++++++ */
+/* CSS EFFECTS  */
+/* +++++++++++++++++++++++++++++++++ */
+
+.section-effect {
   transition: transform 1s, opacity 1s;
 }
 

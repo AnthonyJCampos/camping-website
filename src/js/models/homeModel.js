@@ -23,6 +23,12 @@ just might meet your soulmate amongst them.`,
     camperText: `I've been on this trip for six years now, and I can honestly say it's the highlight of my year. I always have an amazing time with great friends in a beautiful location!`,
     camperImg: 'camper-3.jpg',
   },
+  {
+    camperName: 'Junior Castro',
+    camperRole: '2nd Year Camper',
+    camperText: `Camp Sus is the perfect getaway for my family. We've attended twice, and each time we've had the most amazing experiences. My son, in particular, loves it here, and he always looks forward to it every year. Thank you, Camp Sus!`,
+    camperImg: 'camper-4.jpg',
+  },
 ];
 
 /** CAMPERS STATE */
