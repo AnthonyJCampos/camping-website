@@ -43,11 +43,11 @@ class CarouselView extends View {
   _generateMarkup() {
     return `         
     <img
-      class="testimonial-img"
+      class="testimonial-img new-element--slow"
       src="src/img/home/testimonials/${this._data.camperData.camperImg}"
       alt="Amanda Halverson"
     />
-    <blockquote class="testimonial">
+    <blockquote class="testimonial new-element--slow">
       <p class="testimonial-text">"${this._data.camperData.camperText}"
       </p>
       <p class="testimonial-author">${this._data.camperData.camperName}</p>
@@ -83,7 +83,7 @@ class CarouselView extends View {
     for (let i = 0; i < numCampers; i++) {
       markup.push(
         `<button class="dot ${
-          currCamper === i ? 'dot--fill' : ''
+          currCamper === i ? 'dot--fill new-element--fast' : ''
         }" dot-index="${i}" aria-label="Dot ${i}">&nbsp;</button>`
       );
     }

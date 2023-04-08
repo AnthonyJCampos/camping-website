@@ -1,6 +1,10 @@
 import * as homeModel from './models/homeModel.js';
 import carouselView from './views/carouselView.js';
-import { revealSections, slideElementsIn } from './helper.js';
+import {
+  revealSections,
+  slideElementsIn,
+  lazyLoadImgBySection,
+} from './helper.js';
 
 const controlCarousel = function (goToCamper) {
   if (goToCamper === undefined) {
@@ -20,8 +24,11 @@ const init = function () {
   // apply effect
   revealSections(allSections);
 
+  // lazy load imgs by section
+  lazyLoadImgBySection(allSections);
+
   const allSlideElements = document.querySelectorAll('.slide-in-effect');
-  slideElementsIn(allSlideElements);
+  slideElementsIn(allSlideElements, 'alternating');
 };
 
 init();

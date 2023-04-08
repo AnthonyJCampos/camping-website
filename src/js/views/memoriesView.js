@@ -7,7 +7,7 @@ class MemoriesView extends View {
     let markup = [];
     for (let i = 1; i <= this._data.memoryCount; i++) {
       markup.push(
-        `<img class="lazy-img" src="../img/memories/lazy/${i}-lazy.jpg" data-src="../img/memories/${i}.jpg" alt="Camping Memory"/>`
+        `<img class="lazy-img--section" src="../img/memories/lazy/${i}-lazy.jpg" data-src="../img/memories/${i}.jpg" alt="Camping Memory"/>`
       );
     }
     return markup.join('');

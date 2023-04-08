@@ -162,16 +162,37 @@ img {
 
 .slide-in--hidden--left {
   opacity: 0;
-  transform: translateX(8rem);
+  transform: translateX(-8rem);
+}
+
+.lazy-img {
+  filter: blur(2px);
+}
+
+.lazy-img--section {
+  filter: blur(2px);
+}
+
+@keyframes append-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.new-element--slow {
+  animation: append-animate 1s ease-in-out;
+}
+
+.new-element--fast {
+  animation: append-animate 0.3s ease-in-out;
 }
 
 /* +++++++++++++++++++++++++++++++++ */
 /* GENERAL RESUABLE COMPONENTS */
 /* +++++++++++++++++++++++++++++++++ */
-
-.lazy-img {
-  filter: blur(2px);
-}
 
 .logo:link,
 .logo:visited {

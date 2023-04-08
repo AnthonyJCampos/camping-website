@@ -1,10 +1,6 @@
 import memoriesView from './views/memoriesView.js';
 import { MEMORIES_COUNT } from './config.js';
-import {
-  revealSections,
-  lazyLoadImgBySection,
-  executeAfterLoad,
-} from './helper.js';
+import { revealSections, lazyLoadImgBySection } from './helper.js';
 
 const init = async function () {
   const data = {

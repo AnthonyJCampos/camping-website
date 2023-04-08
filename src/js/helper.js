@@ -66,31 +66,59 @@ const slideElementIn = function (entries, observer) {
   if (!entry.isIntersecting) {
     return;
   } // end if
-  // use the target prop of the entry toremove the hidden CSS class
-  entry.target.classList.remove('slide-in--hidden');
-  observer.unobserve(entry.target);
-}; // end revealSection
+  // use the target prop of the entry to remove the hidden CSS class
 
-export const slideElementsIn = function (allSections) {
-  const sectionObsOptions = {
+  if (!entry.target.classList.remove('slide-in--hidden--right')) {
+    entry.target.classList.remove('slide-in--hidden--left');
+  }
+  observer.unobserve(entry.target);
+}; // end slideElementIn
+
+export const slideElementsIn = function (allElements, option) {
+  const elementObsOptions = {
     root: null,
     threshold: 0.15,
   };
 
-  const sectionObserver = new IntersectionObserver(
+  const elementObserver = new IntersectionObserver(
     slideElementIn,
-    sectionObsOptions
+    elementObsOptions
   );
 
-  allSections.forEach(function (section) {
+  allElements.forEach(function (element, index) {
     // check if section is already in view port
     // if it does don't add the effect
-    if (!isPartiallyInViewport(section)) {
-      sectionObserver.observe(section);
-      section.classList.add('slide-in--hidden');
+    if (!isPartiallyInViewport(element)) {
+      elementObserver.observe(element);
+
+      const effectMap = new Map([
+        ['alternating', alternatingSlideIn],
+        ['left', leftSlideIn],
+        ['right', rightSlideIn],
+      ]);
+
+      effectMap.get(option)?.(element, index);
     }
   });
-};
+}; // end slideElementsIn
+
+const leftSlideIn = function (element) {
+  element.classList.add('slide-in--hidden--left');
+}; // end leftSlideIn
+
+const rightSlideIn = function (element) {
+  element.classList.add('slide-in--hidden--right');
+}; // end rightSlideIn
+
+const alternatingSlideIn = function (element, index) {
+  if (index % 2 === 0) {
+    leftSlideIn(element);
+  }
+
+  if (index % 2 !== 0) {
+    rightSlideIn(element);
+  }
+}; // end alternatingSlideIn
 
 /** +++++++++++++++++++++++++++++++++  */
 /** LAZY LOADING HELPERS   */
@@ -134,15 +162,16 @@ export const lazyLoadingImg = function () {
 const loadSectionImgs = function (entries, observer) {
   const [entry] = entries; // use destructing
   // base case
+
   if (!entry.isIntersecting) {
     return;
   }
 
-  const imgTargets = document.querySelectorAll('.lazy-img');
+  const imgTargets = document.querySelectorAll('.lazy-img--section');
   imgTargets.forEach(img => (img.src = img.dataset.src));
   imgTargets.forEach(img =>
     img.addEventListener('load', function (event) {
-      img.classList.remove('lazy-img');
+      img.classList.remove('lazy-img--section');
     })
   );
   observer.unobserve(entry.target);
