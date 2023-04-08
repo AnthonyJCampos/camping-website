@@ -61,17 +61,17 @@ export const revealSections = function (allSections) {
 /** SLIDE IN */
 
 const slideElementIn = function (entries, observer) {
-  const [entry] = entries; // use destructing
-  // base case
-  if (!entry.isIntersecting) {
-    return;
-  } // end if
-  // use the target prop of the entry to remove the hidden CSS class
-
-  if (!entry.target.classList.remove('slide-in--hidden--right')) {
-    entry.target.classList.remove('slide-in--hidden--left');
-  }
-  observer.unobserve(entry.target);
+  // this allows for multiple entries to be updated
+  entries.forEach(entry => {
+    // base case
+    if (entry.isIntersecting) {
+      // use the target prop of the entry to remove the hidden CSS class
+      if (!entry.target.classList.remove('slide-in--hidden--right')) {
+        entry.target.classList.remove('slide-in--hidden--left');
+      }
+      observer.unobserve(entry.target);
+    }
+  });
 }; // end slideElementIn
 
 export const slideElementsIn = function (allElements, option) {
@@ -127,23 +127,20 @@ const alternatingSlideIn = function (element, index) {
 /** Lazy Loading Images */
 
 const loadImg = function (entries, observer) {
-  const [entry] = entries;
+  // in the event that more then one img entry the view port at the same time
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Replace src with data-src on img element
+      entry.target.src = entry.target.dataset.src;
+      // when loading is complete remove the blur effect
+      entry.target.addEventListener('load', function () {
+        entry.target.classList.remove('lazy-img');
+      });
 
-  // base case
-  if (!entry.isIntersecting) {
-    return;
-  } // end if
-
-  // Replace src with data-src on img element
-  entry.target.src = entry.target.dataset.src;
-
-  // when loading is complete remove the blur effect
-  entry.target.addEventListener('load', function () {
-    entry.target.classList.remove('lazy-img');
+      // we not longer need to watch the current element as it has loaded
+      observer.unobserve(entry.target);
+    }
   });
-
-  // we not longer need to watch the current element as it has loaded
-  observer.unobserve(entry.target);
 }; // end loadingImg
 
 export const lazyLoadingImg = function () {
