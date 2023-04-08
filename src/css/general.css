@@ -126,12 +126,29 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+img {
+  transition: filter 0.5s;
+}
+
+section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 /* +++++++++++++++++++++++++++++++++ */
 /* GENERAL RESUABLE COMPONENTS */
 /* +++++++++++++++++++++++++++++++++ */
+
+.lazy-img {
+  filter: blur(2px);
+}
 
 .logo:link,
 .logo:visited {

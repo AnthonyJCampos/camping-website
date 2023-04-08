@@ -1,6 +1,5 @@
 import * as homeModel from './models/homeModel.js';
 import carouselView from './views/carouselView.js';
-import memoriesView from './views/memoriesView.js';
 
 const controlCarousel = function (goToCamper) {
   if (goToCamper === undefined) {
