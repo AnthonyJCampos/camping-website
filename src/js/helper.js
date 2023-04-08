@@ -58,6 +58,40 @@ export const revealSections = function (allSections) {
   });
 };
 
+/** SLIDE IN */
+
+const slideElementIn = function (entries, observer) {
+  const [entry] = entries; // use destructing
+  // base case
+  if (!entry.isIntersecting) {
+    return;
+  } // end if
+  // use the target prop of the entry toremove the hidden CSS class
+  entry.target.classList.remove('slide-in--hidden');
+  observer.unobserve(entry.target);
+}; // end revealSection
+
+export const slideElementsIn = function (allSections) {
+  const sectionObsOptions = {
+    root: null,
+    threshold: 0.15,
+  };
+
+  const sectionObserver = new IntersectionObserver(
+    slideElementIn,
+    sectionObsOptions
+  );
+
+  allSections.forEach(function (section) {
+    // check if section is already in view port
+    // if it does don't add the effect
+    if (!isPartiallyInViewport(section)) {
+      sectionObserver.observe(section);
+      section.classList.add('slide-in--hidden');
+    }
+  });
+};
+
 /** +++++++++++++++++++++++++++++++++  */
 /** LAZY LOADING HELPERS   */
 /** +++++++++++++++++++++++++++++++++  */

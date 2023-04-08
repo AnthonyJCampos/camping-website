@@ -146,6 +146,25 @@ img {
   transform: translateY(8rem);
 }
 
+.slide-in-effect {
+  transition: transform 1s, opacity 1s;
+}
+
+.slide-in--hidden {
+  opacity: 0;
+  transform: translateX(8rem);
+}
+
+.slide-in--hidden--right {
+  opacity: 0;
+  transform: translateX(8rem);
+}
+
+.slide-in--hidden--left {
+  opacity: 0;
+  transform: translateX(8rem);
+}
+
 /* +++++++++++++++++++++++++++++++++ */
 /* GENERAL RESUABLE COMPONENTS */
 /* +++++++++++++++++++++++++++++++++ */
