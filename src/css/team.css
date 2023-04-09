@@ -21,6 +21,8 @@
 }
 
 .team-member-box {
+  display: flex;
+  flex-direction: column;
   /* min-width: 300px; */
   min-width: 30rem;
   /* min-height: 55rem; */
@@ -64,6 +66,7 @@
   background-color: #f3f5f8;
   padding: 2.4rem 3.2rem;
 }
+
 .team-member-name {
   font-size: 3rem;
   font-weight: 700;
