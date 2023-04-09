@@ -195,6 +195,47 @@ img {
   animation: append-animate 0.3s ease-in-out;
 }
 
+.jiggle-effect:hover {
+  animation: jiggle 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  transform-origin: center;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+  10% {
+    transform: rotateZ(-1deg);
+  }
+  20% {
+    transform: rotateZ(1deg);
+  }
+  30% {
+    transform: rotateZ(-1deg);
+  }
+  40% {
+    transform: rotateZ(1deg);
+  }
+  50% {
+    transform: rotateZ(-1deg);
+  }
+  60% {
+    transform: rotateZ(1deg);
+  }
+  70% {
+    transform: rotateZ(-1deg);
+  }
+  80% {
+    transform: rotateZ(1deg);
+  }
+  90% {
+    transform: rotateZ(-1deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
 /* +++++++++++++++++++++++++++++++++ */
 /* GENERAL RESUABLE COMPONENTS */
 /* +++++++++++++++++++++++++++++++++ */
@@ -221,6 +262,11 @@ img {
   width: 3.6rem;
   height: 3.6rem;
   color: var(--color--logo-icon-primary);
+}
+
+.logo:hover .icon-logo,
+.logo:active .icon-log {
+  color: var(--color-tertiary);
 }
 
 .heading-primary,
@@ -467,6 +513,13 @@ img {
   align-items: center;
   justify-content: center;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.btn--carousel:hover {
+  background-color: var(--color-quaternary);
 }
 
 .btn--carousel--right {

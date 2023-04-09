@@ -6,11 +6,13 @@
   padding: 4.8rem 0 9.6rem 0;
 }
 
+.meal-day-group {
+  margin-bottom: 4.8rem;
+}
 .meals-day-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
-  margin-bottom: 4.8rem;
 }
 
 .meal-day-name {
@@ -34,6 +36,8 @@
 }
 
 .meal-day {
+  max-width: 35.2rem;
+  min-width: 28rem;
   overflow: hidden;
   border-radius: 24px;
   background-color: #edeff3;
