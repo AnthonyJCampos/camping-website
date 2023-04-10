@@ -73,6 +73,7 @@
 /* +++++++++++++++++++++++++++++++++ */
 
 @media (max-width: 59em) {
+  /* GENERAL */
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
@@ -85,6 +86,76 @@
   .container {
     padding: 0 4.8rem;
   }
+
+  /* MOBILE NAV*/
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    transition: all 0.5s ease-in;
+
+    /* HIDE NAV without display none*/
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .main-nav-link {
+    border-bottom: 0.4rem solid var(--color--logo-icon-primary);
+  }
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    border-bottom: none;
+    padding: 1.2rem 1.8rem;
+  }
+
+  .nav-open .btn-mobile-nav {
+    z-index: 2;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 1;
+  }
+
+  .nav-open .icon-close {
+    display: block;
+  }
+
+  .nav-open .icon-menu {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    border-bottom: none;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /* HOME PAGE */
 
   .hero {
     grid-template-columns: 1fr;
@@ -101,10 +172,6 @@
   }
   .hero-img {
     width: 60%;
-  }
-
-  .step-number {
-    font-size: 7.4rem;
   }
 
   .pricing-box {
@@ -124,6 +191,13 @@
     grid-column: 1/-1;
   }
 
+  /* ABOUT PAGE */
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  /* FOOD PAGE */
   .snacks-box {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -419,6 +493,13 @@
   .snacks-box {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* +++++++++++++++++++++++++++++++++ */
+/* BELOW 544px (PHONES) */
+/* +++++++++++++++++++++++++++++++++ */
+
+@media (max-width: 34em) {
 }
 
 /*

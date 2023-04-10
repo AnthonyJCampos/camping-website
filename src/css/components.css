@@ -54,6 +54,24 @@
   color: var(--color-font-tertiary);
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: transparent;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--color-font-secondary);
+}
+
+.icon-close {
+  display: none;
+}
+
 /* ++++++++++++++++++++++++++++++ */
 /* FOOTER SECTION */
 /* ++++++++++++++++++++++++++++++ */
