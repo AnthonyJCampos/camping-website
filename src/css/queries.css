@@ -346,13 +346,18 @@
     width: 80%;
     flex-direction: column;
     padding: 0;
-    background-color: transparent;
+    gap: 3.6em;
+    /* background-color: transparent; */
+    background: var(--linear-gradient-primary--test);
   }
 
   .testimonial {
-    background-color: var(--color-primary);
     padding: 3.2rem;
     text-align: center;
+  }
+
+  .btn--carousel {
+    background-color: #eb616b;
   }
 
   .pricing-box {

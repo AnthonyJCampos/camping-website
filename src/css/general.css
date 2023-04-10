@@ -103,6 +103,12 @@ REDS:
     rgba(44, 59, 78, 1) 100%
   );
 
+  --linear-gradient-primary--test: linear-gradient(
+    0deg,
+    rgba(74, 99, 130, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
+
   --linear-gradient-tertiary--top: linear-gradient(
     0deg,
     rgba(220, 189, 191, 1) 0%,
@@ -523,7 +529,7 @@ img {
 }
 
 .btn--carousel:hover {
-  background-color: var(--color-quaternary);
+  background-color: var(--color-quaternary) !important;
 }
 
 .btn--carousel--right {
