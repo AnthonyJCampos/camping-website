@@ -107,10 +107,6 @@
     font-size: 7.4rem;
   }
 
-  .section-princing .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .pricing-box {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -126,7 +122,6 @@
 
   .feature-box .feature:last-child {
     grid-column: 1/-1;
-    width: 50%;
   }
 
   .snacks-box {
@@ -139,9 +134,38 @@
 /* +++++++++++++++++++++++++++++++++ */
 
 @media (max-width: 50em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-    font-size: 43.75%;
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .flex--row {
+    flex-direction: column;
+  }
+
+  .essential-text-box {
+    order: 1;
+    max-width: 65%;
+    min-width: 37rem;
+  }
+  .essential-img-box {
+    max-width: 60%;
+    order: 0;
+  }
+
+  .logo-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+  }
+
+  .carousel {
+    width: 64rem;
   }
 
   .step-number {
@@ -152,16 +176,8 @@
     align-items: flex-end;
   }
 
-  .boxes-name {
-    text-align: center;
-  }
-
   .team-box {
     grid-template-columns: 1fr;
-  }
-
-  .carousel {
-    width: 64rem;
   }
 
   .meal-day-name {
@@ -211,6 +227,163 @@
 
   .boxes-info {
     font-size: 1.8rem;
+  }
+
+  /* DRINKS PAGE*/
+  .section-non-alcohlic .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-water .container,
+  .section-coffee .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .water-box,
+  .coffee-box {
+    grid-template-columns: 1fr;
+    max-width: 55rem;
+    row-gap: 0;
+  }
+
+  .water-text-box {
+    order: 1;
+  }
+
+  .water-img,
+  .coffee-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .water-text-box,
+  .coffee-text-box {
+    padding: 3.4rem;
+  }
+
+  .alcohlic-box {
+    grid-template-columns: 1fr;
+  }
+
+  .alcohlic-text-box {
+    align-items: center;
+  }
+
+  .alcohlic-info {
+    text-align: center;
+  }
+
+  .alcohlic-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .alcohlic-img {
+    max-width: 50rem;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++ */
+/* BELOW 752px  */
+/* +++++++++++++++++++++++++++++++++ */
+
+@media (max-width: 47em) {
+  /* DRINKS PAGE*/
+
+  .drink-choices {
+    margin-bottom: 6.4rem;
+  }
+  .drink-grid {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+    justify-items: center;
+  }
+
+  .drink-box {
+    max-width: 55rem;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++ */
+/* BELOW 640px  */
+/* +++++++++++++++++++++++++++++++++ */
+
+@media (max-width: 40em) {
+  /* HOME PAGE */
+  .carousel {
+    width: 80%;
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .testimonial {
+    background-color: var(--color-primary);
+    padding: 3.2rem;
+    text-align: center;
+  }
+
+  .pricing-box {
+    grid-template-columns: 1fr;
+  }
+  .feature-box {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-heading {
+    justify-content: flex-start;
+  }
+
+  .feature-icon {
+    margin-left: 6rem;
+  }
+
+  .feature {
+    max-width: 33.6rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery .img-border {
+    width: 90%;
+    min-width: 33.6rem;
+  }
+
+  /* ACTIVITIES PAGE*/
+
+  .intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3.6rem;
+  }
+
+  .intro-description {
+    margin-bottom: 2.4rem;
+  }
+
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-info {
+    font-size: 2rem;
+  }
+
+  /* FOOD PAGE*/
+
+  .snacks-box {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

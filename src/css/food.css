@@ -67,6 +67,7 @@
   justify-content: space-between;
   gap: 0.8rem;
   padding: 3rem 2.4rem;
+  line-height: 1.15;
 }
 
 .meal-name {

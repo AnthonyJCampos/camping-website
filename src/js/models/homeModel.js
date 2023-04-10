@@ -20,7 +20,7 @@ just might meet your soulmate amongst them.`,
   {
     camperName: 'Ronnie Kwong',
     camperRole: 'Long Time Camper',
-    camperText: `I've been on this trip for six years now, and I can honestly say it's the highlight of my year. I always have an amazing time with great friends in a beautiful location!`,
+    camperText: `I've been attending this camping trip for six years now, and I can honestly say it's the highlight of my year. The camaraderie and outdoor activities are truly second to none, and the beautiful location only adds to the experience.`,
     camperImg: 'camper-3.jpg',
   },
   {

@@ -28,6 +28,7 @@
 
 .hero-description {
   font-size: 2rem;
+  line-height: 1.35;
   margin-bottom: 3.2rem;
 }
 
@@ -44,16 +45,12 @@
 }
 
 .essential-text-box {
-  max-width: 70rem;
-  min-height: 32rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  padding: 2.4rem;
+  padding: 3.2rem 2.4rem;
   background-color: var(--color-secondary-tint);
   border-radius: 24px;
-
   transition: all 0.4s;
 }
 
@@ -79,12 +76,12 @@
 
 .essential-description {
   font-size: 1.8rem;
+  line-height: 1.35;
   margin-bottom: 3.6rem;
 }
 
 .essential-img-box {
   min-width: 37rem;
-  max-width: fit-content;
 }
 
 .essential-img {
@@ -106,6 +103,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem;
+  overflow: hidden;
+  border-radius: 24px;
 }
 
 .gallery-img-block {
@@ -120,16 +119,6 @@
 
 .style-2 {
   grid-template-rows: 1fr 0.5fr 1fr;
-}
-
-.border-radius--left {
-  overflow: hidden;
-  border-radius: 24px 0 0 24px;
-}
-
-.border-radius--right {
-  overflow: hidden;
-  border-radius: 0 24px 24px 0;
 }
 
 .img-pos-mid-wide {
@@ -218,6 +207,7 @@
 .pricing-text {
   font-size: 1.8rem;
   color: var(--color-primary);
+  margin-bottom: 1.2rem;
 }
 
 /* ++++++++++++++++++++++++++++++ */

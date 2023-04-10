@@ -14,7 +14,6 @@
 
 .activity-box-inner {
   width: 80%;
-  min-width: 25.5rem;
   height: 100%;
   box-shadow: var(--shadow--primary);
   border-radius: 24px;
