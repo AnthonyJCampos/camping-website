@@ -168,18 +168,12 @@
     width: 64rem;
   }
 
-  .step-number {
-    font-size: 6.2rem;
-  }
-
-  .step-img-box {
-    align-items: flex-end;
-  }
-
+  /* TEAM PAGE */
   .team-box {
     grid-template-columns: 1fr;
   }
 
+  /* FOOD PAGE */
   .meal-day-name {
     margin-left: 4.2rem;
   }
@@ -227,6 +221,11 @@
 
   .boxes-info {
     font-size: 1.8rem;
+  }
+
+  /* ABOUT PAGE*/
+  .step-number {
+    font-size: 6.2rem;
   }
 
   /* DRINKS PAGE*/
@@ -304,6 +303,36 @@
 
   .drink-box {
     max-width: 55rem;
+  }
+
+  /* ABOUT PAGE*/
+  .about {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .about-img-box:nth-child(3) {
+    grid-row: 4;
+  }
+
+  /* ABOUT PAGE*/
+
+  .grid--steps {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img-box {
+    justify-self: center;
+    max-width: 55rem;
+  }
+
+  .section-location .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .location-img-box {
+    max-width: 55rem;
+    justify-self: center;
   }
 }
 
