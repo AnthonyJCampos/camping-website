@@ -108,7 +108,7 @@
   color: var(--color-font-tertiary);
 }
 
-.accordion-text {
+.accordion-question {
   font-size: 2.4rem;
   font-weight: 500;
   color: var(--color-font-secondary);
