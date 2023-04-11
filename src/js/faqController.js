@@ -1,13 +1,28 @@
 import Accordion from './component/accordion.js';
-import { supplyFaqs, activitiesFaqs } from './data/faqData.js';
+import {
+  supplyFaqs,
+  activitiesFaqs,
+  foodFaqs,
+  drinkFaqs,
+} from './data/faqData.js';
 
-// create a new instance of the Accordion class
-const accordionSupplies = new Accordion(supplyFaqs);
+const initFaqSection = function () {
+  const faqSection = [supplyFaqs, activitiesFaqs, foodFaqs, drinkFaqs];
 
-// get a reference to the element where you want to append the accordion
-const containerSupplies = document.querySelector('.accordion-box--1');
-accordionSupplies.render(containerSupplies);
+  faqSection.forEach((section, index) => {
+    // create a new instance of the Accordion class
+    const accordionElement = new Accordion(section);
+    // get a reference to the element where you want to append the accordion
+    const containerElement = document.querySelector(
+      `.accordion-box--${index + 1}`
+    );
 
-const accordionActivities = new Accordion(activitiesFaqs);
-const containerActivities = document.querySelector('.accordion-box--2');
-accordionActivities.render(containerActivities);
+    if (!containerElement) {
+      return;
+    }
+    // render accordion elements on screen
+    accordionElement.render(containerElement);
+  });
+};
+
+initFaqSection();

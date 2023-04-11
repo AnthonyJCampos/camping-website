@@ -111,7 +111,7 @@ export const activitiesFaqs = [
   },
 ];
 
-const foodFaqs = [
+export const foodFaqs = [
   {
     question: 'What type of food is served at Camp Sus?',
     answer:
@@ -176,7 +176,7 @@ const foodFaqs = [
   },
 ];
 
-const drinkFaqs = [
+export const drinkFaqs = [
   {
     question: 'What drink options are available?',
     answer: 'We offer a wide range of drink options including: ',
