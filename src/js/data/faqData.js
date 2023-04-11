@@ -48,7 +48,7 @@ export const supplyFaqs = [
   },
 ];
 
-const activitiesFaqs = [
+export const activitiesFaqs = [
   {
     question: 'What amenities are available at Camp Sus?',
     answer: 'Camp Sus offers a range of amenities, including:',
