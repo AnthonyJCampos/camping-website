@@ -53,6 +53,7 @@ REDS:
   --color-font-secondary: #292e37;
   --color-font-tertiary: #dadddf;
   --color-font-quaternary: #dbe0e6;
+  --color-font-lightest: #fbfcfd;
 
   /* FONT HEADINGS */
   --color-font--heading-primary: #292e37;
