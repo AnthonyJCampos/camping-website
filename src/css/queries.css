@@ -488,11 +488,17 @@
     font-size: 2rem;
   }
 
+  .activity-box-inner {
+    width: 100%;
+  }
+
   /* FOOD PAGE*/
 
   .snacks-box {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* ACTIVITIES PAGE*/
 }
 
 /* +++++++++++++++++++++++++++++++++ */
@@ -500,6 +506,98 @@
 /* +++++++++++++++++++++++++++++++++ */
 
 @media (max-width: 34em) {
+  /* COMPONENTS */
+  .section-intro {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .intro {
+    row-gap: 1.4rem;
+  }
+
+  .intro-boost {
+    margin-bottom: 1.6rem;
+  }
+
+  /* GENERAL */
+  .heading-secondary,
+  .margin-bottom--sm {
+    margin-bottom: 3.6rem !important;
+  }
+
+  .container {
+    padding: 0 3.6rem;
+  }
+
+  /* HOME PAGE */
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .section-gallery {
+    padding: 8rem 0;
+  }
+
+  /* DRINKS PAGE*/
+
+  .boxes-grid.grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .alcohlic-box {
+    row-gap: 3.2rem;
+  }
+  .alcohlic-text-box {
+    padding: 0;
+  }
+
+  .alcohlic-info {
+    text-align: start;
+  }
+
+  .drink-choices {
+    margin-bottom: 3.2rem;
+  }
+  .alcohlic-warning {
+    margin-top: 3.2rem;
+  }
+
+  /* FOOD PAGE*/
+
+  .snacks-box {
+    grid-template-columns: 1fr;
+  }
+
+  /* TEAM PAGE */
+
+  .section-team-about {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  /* ABOUT PAGE */
+  .about-boost {
+    margin-bottom: 1.6rem;
+  }
+
+  .section-how {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .section-location {
+    padding: 4.8rem 0 4.8rem 0;
+  }
+
+  .grid-memory {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /*
