@@ -548,6 +548,11 @@
 
   /* DRINKS PAGE*/
 
+  .section-alcohlic .subheading,
+  .section-alcohlic .heading-secondary {
+    text-align: start;
+  }
+
   .boxes-grid.grid--3-cols {
     grid-template-columns: 1fr;
   }
