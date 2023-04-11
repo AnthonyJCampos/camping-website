@@ -11,6 +11,18 @@ export default class Accordion extends Component {
     super(data);
   }
 
+  addClickHandler() {
+    this._parentElement.addEventListener('click', function (event) {
+      const btn = event.target.closest('.accordion-item');
+
+      if (!btn) {
+        return;
+      }
+
+      btn.classList.toggle('accordion-open');
+    });
+  }
+
   _generateMarkup() {
     return `<div class="accordion">${this._data
       .map(this._generateItem)

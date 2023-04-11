@@ -22,6 +22,7 @@ const initFaqSection = function () {
     }
     // render accordion elements on screen
     accordionElement.render(containerElement);
+    accordionElement.addClickHandler();
   });
 };
 

@@ -99,7 +99,7 @@ export const activitiesFaqs = [
 
   {
     question: 'Are pets allowed?',
-    answer: ': Yes, pets are allowed at Camp Sus',
+    answer: 'Yes, pets are allowed at Camp Sus',
     list: [],
   },
 
@@ -145,7 +145,7 @@ export const foodFaqs = [
   },
 
   {
-    question: 'Are there any cooking classes or workshops offered?',
+    question: 'Are there any workshops offered?',
     answer:
       'Yes, Camp Sus offers a variety of cooking workshops throughout the day. Please check the Camp Chef to improve you cooking skills with him.',
     list: [],
@@ -154,7 +154,7 @@ export const foodFaqs = [
   {
     question: 'Can I bring my own grill or cooking equipment?',
     answer:
-      'No, all cooking equiment is included in the large outdoor kitchen area',
+      'No, all cooking equiment is included in the large outdoor kitchen area.',
     list: [],
   },
 
@@ -212,7 +212,7 @@ export const drinkFaqs = [
 
   {
     question: 'Is it possible to bring your own drinks to the campsite?',
-    answer: `Yes, you are welcome to bring your own drinks to the campsite, but we ask that you please don't bring duplicate of what is already included`,
+    answer: `Yes, you are welcome to bring your own drinks to the campsite, but we ask that you please don't bring duplicate of what is already included.`,
     list: [],
   },
 ];

@@ -4,8 +4,8 @@ const campers = [
     camperName: 'Amanda Halverson',
     camperRole: 'First Time Camper',
     camperText: `Camp Sus is made up of some of the most welcoming and friendly
-people I've had the pleasure of meeting. The weekend is about
-relaxing and enjoying nature, surrounded by good people. And you
+people I've met. The weekend is about
+relaxing and enjoying nature, surrounded by good people. You
 just might meet your soulmate amongst them.`,
     camperImg: 'camper-1.jpg',
   },

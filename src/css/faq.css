@@ -3,7 +3,7 @@
 /* ++++++++++++++++++++++++++++++ */
 
 .section-faq-intro {
-  padding: 3.2rem 0 9.6rem 0;
+  padding: 3.2rem 0 12.4rem 0;
 }
 
 .faq-intro {
@@ -87,6 +87,7 @@
 
 .accordion {
   width: 100%;
+  max-width: 60rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -95,8 +96,8 @@
 .accordion-item {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  column-gap: 24px;
-  row-gap: 32px;
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
 
   align-items: center;
   padding: 2.4rem;
@@ -129,8 +130,8 @@
 .accordion-answer {
   color: var(--color-font-secondary);
   font-size: 1.8rem;
-  line-height: 1.6;
-  margin-bottom: 1.6rem;
+  line-height: 1.35;
+  margin-bottom: 1.2rem;
 }
 
 .accordion-list {
@@ -139,7 +140,7 @@
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.8rem;
 }
 
 /* Open State */
