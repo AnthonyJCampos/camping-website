@@ -1,5 +1,6 @@
 import Accordion from './component/accordion.js';
-
+import { mediaQueryMenu } from './helper.js';
+import { MOBILE_NAV_MEDIA_QUERY } from './config.js';
 import {
   supplyFaqs,
   activitiesFaqs,
@@ -8,6 +9,14 @@ import {
 } from './data/faqData.js';
 
 const initFaqSection = function () {
+  // determine if mobile nav is needed
+  document.addEventListener('DOMContentLoaded', function () {
+    // check initial page load
+    mediaQueryMenu(MOBILE_NAV_MEDIA_QUERY);
+    // dynamically check when page changes
+    MOBILE_NAV_MEDIA_QUERY.addEventListener('change', mediaQueryMenu);
+  });
+
   const faqSection = [supplyFaqs, activitiesFaqs, foodFaqs, drinkFaqs];
 
   faqSection.forEach((section, index) => {

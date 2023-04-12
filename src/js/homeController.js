@@ -16,6 +16,13 @@ const controlCarousel = function (goToCamper) {
 };
 
 const init = function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    // check initial page load
+    mediaQueryMenu(MOBILE_NAV_MEDIA_QUERY);
+    // dynamically check when page changes
+    MOBILE_NAV_MEDIA_QUERY.addEventListener('change', mediaQueryMenu);
+  });
+
   carouselView.render(homeModel.getTestimonial());
   carouselView.addDotHandler(controlCarousel);
   carouselView.addBtnHandler(controlCarousel);
@@ -35,10 +42,3 @@ const init = function () {
 };
 
 init();
-
-document.addEventListener('DOMContentLoaded', function () {
-  // check initial page load
-  mediaQueryMenu(MOBILE_NAV_MEDIA_QUERY);
-  // dynamically check when page changes
-  MOBILE_NAV_MEDIA_QUERY.addEventListener('change', mediaQueryMenu);
-});

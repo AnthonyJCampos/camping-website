@@ -31,16 +31,6 @@ just might meet your soulmate amongst them.`,
   },
 ];
 
-/** CAMPERS STATE */
-// export const testimonialState = {
-//   campersCount: campers.length,
-//   camperPos: 0,
-//   camperName: campers[0].camperName,
-//   camperRole: campers[0].camperRole,
-//   camperText: campers[0].camperText,
-//   camperImg: campers[0].camperImg,
-// };
-
 export const getTestimonial = function (camperPos = 0) {
   if (camperPos < 0) {
     camperPos = campers.length - 1;
