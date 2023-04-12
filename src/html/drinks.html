@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/drinks.css" />
     <link rel="stylesheet" href="../css/queries.css" />
-
+    <!-- JavaScript -->
+    <script type="module" src="../js/generalController.js"></script>
     <title>Camps Sus Food Options</title>
   </head>
   <body>
@@ -93,7 +94,12 @@
             <!-- SNACK ROW 1 -->
             <div class="boxes-box">
               <div class="boxes-img-box">
-                <img src="../img/drinks/coke-1.webp" alt="Coca Cola Soda" />
+                <img
+                  class="lazy-img"
+                  src="../img/drinks/lazy/coke-1-lazy.webp"
+                  data-src="../img/drinks/coke-1.webp"
+                  alt="Coca Cola Soda"
+                />
               </div>
               <div class="boxes-text-box">
                 <p class="boxes-name">Coca Cola</p>
@@ -105,7 +111,12 @@
             </div>
             <div class="boxes-box">
               <div class="boxes-img-box">
-                <img src="../img/drinks/sprite-1.webp" alt="Sprite Soda" />
+                <img
+                  class="lazy-img"
+                  src="../img/drinks/lazy/sprite-1-lazy.webp"
+                  data-src="../img/drinks/sprite-1.webp"
+                  alt="Sprite Soda"
+                />
               </div>
               <div class="boxes-text-box">
                 <p class="boxes-name">Sprite</p>
@@ -117,7 +128,12 @@
             </div>
             <div class="boxes-box">
               <div class="boxes-img-box">
-                <img src="../img/drinks/sunkist-1.webp" alt="Sunkist Soda" />
+                <img
+                  class="lazy-img"
+                  src="../img/drinks/lazy/sunkist-1-lazy.webp"
+                  data-src="../img/drinks/sunkist-1.webp"
+                  alt="Sunkist Soda"
+                />
               </div>
               <div class="boxes-text-box">
                 <p class="boxes-name">Sunkist</p>
@@ -131,7 +147,9 @@
             <div class="boxes-box">
               <div class="boxes-img-box">
                 <img
-                  src="../img/drinks/cranberry-1.webp"
+                  class="lazy-img"
+                  src="../img/drinks/lazy/cranberry-1-lazy.webp"
+                  data-src="../img/drinks/cranberry-1.webp"
                   alt="Cranberry Juice"
                 />
               </div>
@@ -159,7 +177,12 @@
             </div>
             <div class="boxes-box">
               <div class="boxes-img-box">
-                <img src="../img/drinks/gatorade-1.webp" alt="Gatorade" />
+                <img
+                  class="lazy-img"
+                  src="../img/drinks/lazy/gatorade-1-lazy.webp"
+                  data-src="../img/drinks/gatorade-1.webp"
+                  alt="Gatorade"
+                />
               </div>
               <div class="boxes-text-box">
                 <p class="boxes-name">Gatorade</p>
@@ -177,7 +200,7 @@
 
       <!-- WATER SECTION -->
       <section class="section-water">
-        <div class="container">
+        <div class="container slide-in-effect">
           <div class="water-box grid grid--2-cols shadow--light">
             <div class="water-text-box">
               <div class="water-heading">
@@ -199,8 +222,9 @@
             </div>
             <div class="water-img-box">
               <img
-                class="water-img"
-                src="../img/drinks/water/water-1.jpg"
+                class="water-img lazy-img"
+                src="../img/drinks/lazy/water-1-lazy.jpg"
+                data-src="../img/drinks/water/water-1.jpg"
                 alt="55 Gallon Water Drum
               and 10 Gallon Insulated Beverage Dispenser"
               />
@@ -210,12 +234,13 @@
       </section>
       <!-- COFFEE SECTION -->
       <section class="section-coffee">
-        <div class="container">
+        <div class="container slide-in-effect">
           <div class="coffee-box grid grid--2-cols shadow--light">
             <div class="coffee-img-box">
               <img
-                class="coffee-img"
-                src="../img/drinks/coffee/coffee-1.jpg"
+                class="coffee-img lazy-img"
+                src="../img/drinks/lazy/coffee-1-lazy.jpg"
+                data-src="../img/drinks/coffee/coffee-1.jpg"
                 alt="24 Cup coffee pot and Insulated Beverage Dispenser"
               />
             </div>
@@ -238,7 +263,7 @@
         </div>
       </section>
       <!-- ALCOHLIC SECTION START -->
-      <section class="section-alcohlic">
+      <section class="section-alcohlic section-effect">
         <div class="container center-text">
           <span class="subheading">Alcoholic Menu</span>
           <h2 class="heading-secondary">
@@ -272,8 +297,9 @@
           </div>
           <div class="alcohlic-img-box">
             <img
-              class="alcohlic-img"
-              src="../img/drinks/booze/cooler-1.jpg"
+              class="alcohlic-img lazy-img"
+              src="../img/drinks/lazy/cooler-1-lazy.jpg"
+              data-src="../img/drinks/booze/cooler-1.jpg"
               alt="Double Keg Cooler"
             />
           </div>
@@ -288,8 +314,9 @@
             <div class="drink-box-inner">
               <div class="drink-img-box">
                 <img
-                  class="drink-img"
-                  src="../img/drinks/booze/beer-1.jpg"
+                  class="drink-img lazy-img"
+                  src="../img/drinks/lazy/beer-1-lazy.jpg"
+                  data-src="../img/drinks/booze/beer-1.jpg"
                   alt="Two Glasses Full Of Beer"
                 />
               </div>
@@ -310,7 +337,8 @@
               <div class="drink-img-box">
                 <img
                   class="drink-img"
-                  src="../img/drinks/booze/truly-1.jpg"
+                  src="../img/drinks/lazy/truly-1-lazy.jpg"
+                  data-src="../img/drinks/booze/truly-1.jpg"
                   alt="Truly Wild Berry Seltzer"
                 />
               </div>

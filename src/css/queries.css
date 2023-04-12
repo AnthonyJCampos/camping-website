@@ -104,6 +104,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 4.8rem;
+
     display: none;
   }
 
@@ -120,8 +121,10 @@
   .nav-open .btn-mobile-nav {
     z-index: 2;
   }
+
   .nav-open .main-nav {
     display: flex;
+    opacity: 0.95;
     z-index: 1;
   }
 

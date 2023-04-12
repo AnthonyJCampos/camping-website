@@ -20,6 +20,37 @@ export const executeAfterLoad = function (callbackFunc) {
   });
 };
 
+/** MOBILE NAV FUNCTION  */
+
+const menuBtnClickEvent = function (event) {
+  const header = document.querySelector('.header');
+  if (!header) {
+    return;
+  }
+
+  header.classList.toggle('nav-open');
+};
+
+export const mediaQueryMenu = function (mediaQuery) {
+  const navBtn = document.querySelector('.btn-mobile-nav');
+
+  if (!navBtn) {
+    return;
+  }
+
+  if (mediaQuery.matches) {
+    navBtn.addEventListener('click', menuBtnClickEvent);
+  }
+
+  if (!mediaQuery.matches) {
+    navBtn.removeEventListener('click', menuBtnClickEvent);
+    const header = document.querySelector('.header');
+    if (header.classList.contains('nav-open')) {
+      header.remove('nav-open');
+    }
+  }
+};
+
 /** +++++++++++++++++++++++++++++++++  */
 /** EFFECTS HELPERS   */
 /** +++++++++++++++++++++++++++++++++  */
@@ -145,6 +176,10 @@ const loadImg = function (entries, observer) {
 
 export const lazyLoadingImg = function () {
   const imgTargets = document.querySelectorAll('img[data-src]');
+
+  if (!imgTargets) {
+    return;
+  }
 
   const imgObOptions = {
     root: null,
