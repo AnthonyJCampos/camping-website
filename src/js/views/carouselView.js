@@ -66,7 +66,7 @@ class CarouselView extends View {
         name="chevron-forward-outline"
       ></ion-icon>
     </button>
-    <div class="dots">
+    <div class="dots" >
       ${this._generateDots()}
     </div>`;
   }
@@ -84,7 +84,7 @@ class CarouselView extends View {
       markup.push(
         `<button class="dot ${
           currCamper === i ? 'dot--fill new-element--fast' : ''
-        }" dot-index="${i}" aria-label="Dot ${i}">&nbsp;</button>`
+        }" dot-index="${i}" title="Camper Position" aria-label="Dot ${i}">&nbsp;</button>`
       );
     }
     return markup.join('');
