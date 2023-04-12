@@ -1,4 +1,5 @@
 import Accordion from './component/accordion.js';
+
 import {
   supplyFaqs,
   activitiesFaqs,
