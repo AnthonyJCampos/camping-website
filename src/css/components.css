@@ -43,7 +43,7 @@
 .main-nav-link.nav-cta:visited {
   background-color: var(--color-tertiary);
   color: var(--color-font-primary);
-  padding: 1.2rem 1.8rem;
+  padding: 1.2rem 3rem;
   border-radius: 12px;
   transition: all 0.3s;
 }
