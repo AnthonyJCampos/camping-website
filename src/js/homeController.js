@@ -32,3 +32,37 @@ const init = function () {
 };
 
 init();
+
+const mediaQuery = window.matchMedia('(max-width: 59em)');
+
+function menu(mediaQuery) {
+  if (mediaQuery.matches) {
+    // If media query matches
+
+    console.log('MATCHES ');
+    const navBtn = document.querySelector('.btn-mobile-nav');
+    console.log(navBtn);
+
+    navBtn.addEventListener('click', function (event) {
+      const header = document.querySelector('.header');
+
+      if (header.classList.contains('nav-open')) {
+        header.classList.remove('nav-open');
+      } else {
+        header.classList.add('nav-open');
+      }
+      console.log(header.classList);
+    });
+  }
+
+  if (!mediaQuery.matches) {
+    console.log('DOES NOT MATCH ');
+    const header = document.querySelector('.header');
+    header.classList.remove('nav-open');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  menu(mediaQuery);
+  mediaQuery.addEventListener('change', menu);
+});
