@@ -20,7 +20,7 @@
       rgba(196, 205, 220, 0.1),
       rgba(44, 59, 78, 0.7)
     ),
-    url('/src/img/faq/faq-1.jpg');
+    url('../img/faq/faq-1.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 24px;
