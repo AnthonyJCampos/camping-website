@@ -1,5 +1,20 @@
 /** HELPER METHODS */
 
+/** MENU NAV HELPERS  */
+export const navLinkHandler = function () {
+  const mainNavElement = document.querySelector('.main-nav');
+
+  mainNavElement?.addEventListener('click', function (event) {
+    const link = event.target.closest('a:link');
+
+    if (!link) {
+      return;
+    }
+
+    document.querySelector('.header')?.classList.remove('nav-open');
+  });
+}; // end navLinkHandler
+
 /** CHECK IF ELEMENT IS IN VIEWPORT */
 const isPartiallyInViewport = function (element) {
   const rect = element.getBoundingClientRect();

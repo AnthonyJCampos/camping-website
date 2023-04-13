@@ -1,5 +1,5 @@
 import Accordion from './component/accordion.js';
-import { mediaQueryMenu } from './helper.js';
+import { mediaQueryMenu, navLinkHandler } from './helper.js';
 import { MOBILE_NAV_MEDIA_QUERY } from './config.js';
 import {
   supplyFaqs,
@@ -16,6 +16,9 @@ const initFaqSection = function () {
     // dynamically check when page changes
     MOBILE_NAV_MEDIA_QUERY.addEventListener('change', mediaQueryMenu);
   });
+
+  // NAV MENU handler
+  navLinkHandler();
 
   const faqSection = [supplyFaqs, activitiesFaqs, foodFaqs, drinkFaqs];
 

@@ -6,6 +6,7 @@ import {
   slideElementsIn,
   lazyLoadImgBySection,
   mediaQueryMenu,
+  navLinkHandler,
 } from './helper.js';
 
 const controlCarousel = function (goToCamper) {
@@ -22,6 +23,9 @@ const init = function () {
     // dynamically check when page changes
     MOBILE_NAV_MEDIA_QUERY.addEventListener('change', mediaQueryMenu);
   });
+
+  // NAV MENU handler
+  navLinkHandler();
 
   carouselView.render(homeModel.getTestimonial());
   carouselView.addDotHandler(controlCarousel);

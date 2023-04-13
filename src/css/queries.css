@@ -119,6 +119,10 @@
     padding: 1.2rem 1.8rem;
   }
 
+  .nav-open .main-nav {
+    animation: append-animate 0.75s ease-in;
+  }
+
   .nav-open .btn-mobile-nav {
     z-index: 2;
   }

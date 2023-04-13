@@ -5,6 +5,7 @@ import {
   lazyLoadingImg,
   lazyLoadImgBySection,
   mediaQueryMenu,
+  navLinkHandler,
 } from './helper.js';
 
 const init = function () {
@@ -15,6 +16,9 @@ const init = function () {
     // dynamically check when page changes
     MOBILE_NAV_MEDIA_QUERY.addEventListener('change', mediaQueryMenu);
   });
+
+  // NAV MENU handler
+  navLinkHandler();
 
   // lazy load any images tagged with the lazing img loading
   lazyLoadingImg();

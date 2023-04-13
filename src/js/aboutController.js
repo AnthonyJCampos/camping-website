@@ -19,6 +19,9 @@ const init = async function () {
     MOBILE_NAV_MEDIA_QUERY.addEventListener('change', mediaQueryMenu);
   });
 
+  // NAV MENU handler
+  navLinkHandler();
+
   // break down objects into each img url
   const readyLazyImgUrls = Object.values(memoryLazyImgUrls).map(value => value);
   const readyHQImgUrls = Object.values(memoryHQImgUrls).map(value => value);
