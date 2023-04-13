@@ -2,7 +2,6 @@
   "name": "campsus",
   "version": "1.0.0",
   "description": "The is the Website site for Camp Sus",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
@@ -18,6 +17,11 @@
   },
   "homepage": "https://github.com/AnthonyJCampos/camping-website#readme",
   "dependencies": {
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "parcel-plugin-lazy": "^0.0.4"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3"
   }
 }

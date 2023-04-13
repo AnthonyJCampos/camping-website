@@ -1,5 +1,6 @@
 
 # ignore these folders during development
+.cache
 dist/
 .parcel-cache/
 node_modules/
