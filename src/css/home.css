@@ -1,3 +1,5 @@
+@import './variables.css';
+
 /* ++++++++++++++++++++++++++++++ */
 /* HERO SECTION */
 /* ++++++++++++++++++++++++++++++ */
@@ -184,7 +186,6 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  /* background-color: var(--color-secondary-tint); */
   border-radius: 24px;
 }
 

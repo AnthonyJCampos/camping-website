@@ -4,8 +4,6 @@ import {
   revealSections,
   lazyLoadImgBySection,
   mediaQueryMenu,
-  loadLazyMemories,
-  loadHQMemories,
 } from './helper.js';
 
 /** IMPORT ALL MEMORY IMAGES FOR PARCEL AND LAZY LOADING  */

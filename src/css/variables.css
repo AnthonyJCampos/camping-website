@@ -1,0 +1,118 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+-FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-FONT WEIGHTS
+Defualt: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+-LINE HEIGHTS
+Defualt: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- LETTER SPACING
+-0.5px
+0.75px
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+--- 02 COLOR PALLETE
+
+BLUES:
+#4a6382
+#899ab8
+
+WHITE:
+#dadddf
+
+REDS:
+#e63946
+*/
+
+:root {
+  /* MAIN COLORS*/
+  --color-primary: #4a6382;
+  --color-secondary: #899ab8;
+
+  --color-tertiary: #dadddf;
+  --color-quaternary: #e63946;
+  /* TINTS AND SHADES*/
+  --color-secondary-tint: #c4cddc;
+
+  /* FONT COLORS*/
+  --color-font-primary: #070a0d;
+  --color-font-secondary: #292e37;
+  --color-font-tertiary: #dadddf;
+  --color-font-quaternary: #dbe0e6;
+  --color-font-lightest: #fbfcfd;
+
+  /* FONT HEADINGS */
+  --color-font--heading-primary: #292e37;
+  --color-font--heading-secondary: #373e4a;
+
+  /* ICON COLORS */
+  --color--logo-icon-primary: #e63946;
+  --color--logo-icon-secondary: #f3f5f8;
+
+  /* EFFECT COLORS */
+  --color-hover-primary: #070a0d;
+
+  /* SHADOW STYLES*/
+  --shadow--primary: 0px 2px 4px 0px rgba(14, 30, 37, 0.12),
+    0px 2px 16px 0px rgba(14, 30, 37, 0.32);
+  --shadow--secondary: 0px 2px 4px 0px rgba(14, 30, 37, 0.12),
+    0px 2px 16px 0px rgba(230, 57, 70, 0.32);
+  --shadow-tertiary: 0px 3px 5px rgba(0, 0, 0, 0.04);
+
+  /* GRADIENT STYLES */
+  --linear-gradient-primary--right: linear-gradient(
+    90deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
+
+  --linear-gradient-primary--left: linear-gradient(
+    270deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
+
+  --linear-gradient-primary--top: linear-gradient(
+    0deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
+
+  --linear-gradient-primary--bottom: linear-gradient(
+    180deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
+
+  --linear-gradient-secondary--top: linear-gradient(
+    0deg,
+    rgba(196, 205, 220, 1) 0%,
+    rgba(44, 59, 78, 1) 100%
+  );
+
+  --linear-gradient-primary--test: linear-gradient(
+    0deg,
+    rgba(74, 99, 130, 1) 0%,
+    rgba(137, 154, 184, 1) 100%
+  );
+
+  --linear-gradient-tertiary--top: linear-gradient(
+    0deg,
+    rgba(220, 189, 191, 1) 0%,
+    rgba(138, 34, 42, 1) 100%
+  );
+}

@@ -4,7 +4,7 @@
   "description": "The is the Website site for Camp Sus",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir ./dist"
+    "build": "parcel build src/index.html --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,12 @@
   },
   "homepage": "https://github.com/AnthonyJCampos/camping-website#readme",
   "dependencies": {
-    "parcel": "^2.8.3",
     "parcel-plugin-lazy": "^0.0.4"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.8.3",
-    "@parcel/transformer-webmanifest": "^2.8.3"
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "cssnano": "^4.1.11",
+    "parcel": "^2.8.3"
   }
 }

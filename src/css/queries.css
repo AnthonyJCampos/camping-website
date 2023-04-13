@@ -1,3 +1,4 @@
+@import './variables.css';
 /* rem and em do NOT depend on html font-size in media queries! */
 
 /* 1 rem = 1em = 16px */
