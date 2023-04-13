@@ -1,4 +1,26 @@
+import { MEMORIES_COUNT } from './config.js';
 /** HELPER METHODS */
+
+/** MEMORY PAGE HELPER, THIS IS REQUIRED FOR PARCEL TO LAZY LOAD THE IMGS AND KNOW THEIR SRC */
+
+export const loadLazyMemories = async function () {
+  const images = [];
+  for (let i = 1; i <= MEMORIES_COUNT; i++) {
+    const image = await require(`../img/memories/lazy/${i}-lazy.jpg`);
+    console.log(image);
+    images.push(image.default);
+  }
+  return images;
+};
+
+export const loadHQMemories = async function () {
+  const images = [];
+  for (let i = 1; i <= MEMORIES_COUNT; i++) {
+    const image = await require(`../img/memories/${i}.jpg`);
+    images.push(image);
+  }
+  return images;
+};
 
 /** CHECK IF ELEMENT IS IN VIEWPORT */
 const isPartiallyInViewport = function (element) {
