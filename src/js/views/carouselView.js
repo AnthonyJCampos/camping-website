@@ -44,7 +44,7 @@ class CarouselView extends View {
     return `         
     <img
       class="testimonial-img new-element--slow"
-      src="src/img/home/testimonials/${this._data.camperData.camperImg}"
+      src="img/home/testimonials/${this._data.camperData.camperImg}"
       alt="Amanda Halverson"
     />
     <blockquote class="testimonial new-element--slow">
